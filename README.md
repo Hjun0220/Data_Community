@@ -11,7 +11,6 @@
 | 인증 | JWT | 로그인 상태 유지 |
 
 ## 폴더 구조
-```
 BigData_Community/
 ├── client/          ← React 프론트엔드
 │   ├── src/
@@ -29,26 +28,21 @@ BigData_Community/
     ├── socket/      ← Socket.io 채팅
     ├── config/      ← DB 연결
     └── index.js     ← 서버 진입점
-```
 
 ## 시작하기
 
 ### 1. 클라이언트
-```bash
 cd client
 npm install
 cp .env.example .env   # 환경변수 설정
 npm run dev
-```
 
 ### 2. 서버
-```bash
 cd server
 npm install
 cp .env.example .env   # 환경변수 설정 (MongoDB URI, JWT_SECRET 등)
 npm run dev
-```
 
 ## 환경변수 설정
-- `client/.env` : Firebase 설정, API URL
-- `server/.env` : MongoDB URI, JWT Secret
+- client/.env : Firebase 설정, API URL
+- server/.env : MongoDB URI, JWT Secret
